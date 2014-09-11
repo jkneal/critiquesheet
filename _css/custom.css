@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?94647450');
+  src: url('../fonts/fontello.eot?94647450#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?94647450') format('woff'), url('../fonts/fontello.ttf?94647450') format('truetype'), url('../fonts/fontello.svg?94647450#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?94647450#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+
+  /* remove if not needed */
+
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+}
+.icon-down:before {
+  content: '\e800';
+}
+/* '' */
+.icon-left:before {
+  content: '\e801';
+}
+/* '' */
+.icon-up:before {
+  content: '\e802';
+}
+/* '' */
+.icon-right:before {
+  content: '\e804';
+}
+/* '' */
+.icon-right-after:after {
+  content: '\e804';
+}
+/* '' */.separator {
+  text-align: center;
+  position: relative;
+}
+.separator div {
+  left: 50%;
+  width: 250px;
+  height: 14px;
+  box-shadow: 0 1px #FEE056;
+  margin: 1rem auto 5rem auto;
+}
+.separator div:before,
+.entry div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+.separator div:before {
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  background: radial-gradient(ellipse at center, #fee056 20%, #ffffff 20%, #ffffff 40%, #fee056 40%, #fee056 15%);
+  border-radius: 50%;
+}
+body {
+  background: #f4f4f4;
+  color: #777;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 300;
+}
+h1,
+h2 {
+  color: #333;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+a {
+  color: #b8cad2;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.featured {
+  color: #c0d376;
+}
+.emphasis {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.arrow-link {
+  margin-top: 3rem;
+}
+.icon-right-after {
+  cursor: pointer;
+}
+.icon-right-after:after {
+  color: #e27c3e;
+}
+.btn {
+  color: #fff;
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+}
+.btn-default {
+  background: #c0d376;
+  border: 0;
+}
+.home .row {
+  margin: 3rem 0;
+}
+a.icon-right-after {
+  color: #444;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.about {
+  text-align: center;
+  padding: 0 10rem;
+}
+.about h1 {
+  font-size: 3.4rem;
+}
+.about h2 {
+  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .about {
+    padding: 0;
+  }
+}
+.home .row img {
+  float: right;
+}
+.home .row .pull-left img {
+  float: left;
+}
+.jumbotron {
+  background: #010222 url('../_assets/home-hero.jpg') no-repeat;
+  color: #fff;
+}
+.jumbotron img {
+  border-radius: 2rem;
+  max-width: 100%;
+}
+.jumbotron blockquote {
+  border-left: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.jumbotron blockquote:before,
+.jumbotron blockquote:after {
+  color: #ccc;
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+.jumbotron blockquote:before {
+  content: open-quote;
+}
+.jumbotron blockquote:after {
+  content: close-quote;
+}
+.jumbotron cite {
+  display: block;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 4rem;
+}
+.jumbotron .signup {
+  text-align: center;
+}
+.jumbotron .signup label {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.jumbotron .signup input[type="email"] {
+  border: 0;
+  border-radius: 4px;
+  color: #333;
+  display: inline-block;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1.5rem;
+}
+.jumbotron .signup .clear {
+  display: inline-block;
+}
+.navbar .logo {
+  float: left;
+  padding-top: 1.5rem;
+}
+.navbar-nav {
+  float: right;
+}
+.navbar a {
+  font-size: 1.8rem;
+}
+.navbar-toggle {
+  background-color: #b8cad2;
+  border: 1px solid #b8cad2;
+}
+footer {
+  color: #fff;
+}
+footer section {
+  padding: 3rem 0;
+}
+footer .social {
+  background: url('../_assets/footer-bg.png');
+}
+footer .twitter {
+  background-color: rgba(184, 202, 210, 0.2);
+}
+footer .google {
+  background-color: rgba(218, 120, 61, 0.2);
+}
+footer .copyright {
+  background-color: #c0d376;
+}
